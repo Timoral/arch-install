@@ -1,8 +1,6 @@
 #!/bin/bash -vx
 
 # init
-ROOT_PART=""
-
 sed -i '/^#.* en_GB.UTF-8 /s/^#//' /etc/locale.gen
 locale-gen
 echo "KEYMAP=uk" > /etc/vconsole.conf
