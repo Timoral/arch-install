@@ -20,10 +20,10 @@ export BOOT_PART
 mount ROOT_PART /mnt
 mkdir /mnt/boot
 mount BOOT_PART /mnt/boot
-pause 'Press [Enter]to continue..."
+pause 'Press [Enter]to continue...'
 pacstrap /mnt base base-devel
 genfstab -U /mnt > /mnt/etc/fstab
 cat /mnt/etc/fstab
 pause 'Press [Enter] key if fstab is correct...'
-cp arch-post-install.sh
+cp arch-post-install.sh /mnt/
 arch-chroot /mnt /bin/bash
