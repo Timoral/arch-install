@@ -11,7 +11,7 @@ pause 'Use $ROOT_PART for /? (Press [Enter])"
 lsblk
 echo "Enter /boot partition: (/dev/sdxY)"
 read BOOT_PART
-pause 'Use $ROOT_PART? (Press [Enter])"
+pause 'Use $ROOT_PART? Press [Enter]"
 
 export ROOT_PART
 export BOOT_PART
